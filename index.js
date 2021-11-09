@@ -18,11 +18,11 @@ firebase.initializeApp(firebaseConfig);
 
 const indexRoute = require("./routes/index");
 const articleRoute = require("./routes/article");
-const createArticleRoute = require("./routes/createarticle");
+const createArticleRoute = require("./routes/createArticle");
 
 app.use("/", indexRoute);
 app.use("/article", articleRoute);
-app.use("/createArticle", createArticleRoute);
+app.use("/create", createArticleRoute);
 
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`);

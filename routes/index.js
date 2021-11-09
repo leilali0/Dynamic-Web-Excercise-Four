@@ -9,9 +9,7 @@ const db = firestore.getFirestore();
 
 //Get all articles from firebase
 router.get("/", (req, res) => {
-	const blogpost = firestore.getDocs(
-		firestore.collection(db,"blogpost")
-	);
+	const blogpost = firestore.getDocs(firestore.collection(db,"blogpost"));
 	const blogpostsArray = [];
 
 	blogpost

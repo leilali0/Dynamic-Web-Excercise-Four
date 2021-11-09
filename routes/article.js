@@ -10,8 +10,7 @@ const db = firestore.getFirestore();
 router.get("/:id", (req, res) => {
 	const postId = req.params.id;
 	const post = firestore.getDoc(
-		firestore.doc(db, "blogpost", postId
-	));
+		firestore.doc(db, "blogpost", postId));
 
 	post 
 		.then((response) => {
