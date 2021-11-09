@@ -67,10 +67,9 @@ router.get("/submit", (req, res) => {
 
 	setBlogPost
 	.then((response) => {
-		console.log("Success");
 		res.send(`
 			<h1>Submission Sucessful!</h1>
-			<p><a href="/creat">Add Another Post</a></p>
+			<p><a href="/create">Add Another Post</a></p>
 		`);
 	})
 	.catch((error) => {
