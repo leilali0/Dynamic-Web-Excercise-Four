@@ -22,7 +22,7 @@
     "firebase": "^9.2.0"
   },
   "engines": {
-    "node": "v16.11.1"
+    "node": "12.x"
   },
   "devDependencies": {
     "prettier": "2.4.1"
